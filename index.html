@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html >
+<head>
+ 
+  <title>sign in and sign up form</title>
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+      <link rel="stylesheet" href="style.css">
+
+   <script src="index0.js"></script>
+</head>
+
+<body>
+  <div class="login-cover">
+  <div class="background"></div>
+    <div id="login-box">
+    <div class="left">
+    
+    <div class="tabs">
+    <ul class="tab-group">
+     
+   <li class="tab"><a href="#login" id="login" onclickvalue="this is alert">Log In</a></li>
+  <li class="tab"><a href="#signup" id="signup">Sign Up</a></li>
+    
+    </ul>
+    
+    </div>
+   
+    <div id="signuppage">
+    <p id="success"> Account has been created !!</p>
+   <p id="signupError"></p>
+   <input id="firsttext" type="text" name="username" placeholder="Username"   />
+   <input id="maintext" type="text" name="email" placeholder="E-mail" />
+   <input id="passtext" type="password" name="password" placeholder="Password" />
+   <input type="submit" name="signup_submit" value="Sign me up" id="submitbtn" />
+   </div>
+    
+    <div id="loginpage">
+    
+    <h>Welcome Back</h>
+      
+    <p id="loginError"></p>
+      <input id="loginEmail"  type="text" name="email" placeholder="E-mail" />
+    <input id="loginPassword"  type="password" name="password" placeholder="Password" />
+    <input type="submit" name="login_submit" value="Login" id="loginBtn"/>
+    </div>
+    </div>
+    </div>
+  
+   
+    </div><!---login-cover--------->
+  
+<!-- The Modal -->
+   <div id="myModal" class="modal">
+   
+   <!-- Modal content -->
+   <div class="modal-content">
+   <span class="close">&times;</span>
+   <p>You Are Successfully Sign in!! </p>
+   </div>
+   
+   </div>
+  
+<ul class="upper">
+  <li class="lower" ><a class="active" href="#home">Home</a>
+</li><li class="lower"><a href="#news">News</a>
+</li><li class="lower"><a href="#contact">Contact</a>
+</li><li class="lower"><a href="#about">About</a></li>
+      <button class="signoutbtn" type="button" onclick="window.location.reload()" >sign out</button>
+</ul>
+
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+<script >
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDJEPpuLJPj-1NcwECuu8MvecJbaEv7zSM",
+    authDomain: "login-page-f34ba.firebaseapp.com",
+    databaseURL: "https://login-page-f34ba.firebaseio.com",
+    projectId: "login-page-f34ba",
+    storageBucket: "login-page-f34ba.appspot.com",
+    messagingSenderId: "1079513476472"
+  };
+  firebase.initializeApp(config);
+</script>
+ <script src="index0.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>
